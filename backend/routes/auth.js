@@ -1,5 +1,5 @@
 const express = require('express');
-const { Signup, Login, Logout } = require('../controllers/authController');
+const { Signup, Login, Logout, VerifyEmail } = require('../controllers/authController');
 
 const router = express.Router();
 
@@ -11,5 +11,8 @@ router.post('/login', Login);
 
 // Logout route
 router.post('/logout', Logout);
+
+// Email verification Link
+router.post('/verify-email', VerifyEmail);
 
 module.exports = router;
