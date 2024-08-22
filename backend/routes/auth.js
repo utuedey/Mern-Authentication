@@ -1,5 +1,11 @@
 const express = require('express');
-const { Signup, Login, Logout, VerifyEmail, ForgotPassport } = require('../controllers/authController');
+const { 
+    Signup,
+    Login,
+    Logout,
+    VerifyEmail,
+    ForgetPassword,
+    ResetPassword } = require('../controllers/authController');
 
 const router = express.Router();
 
@@ -16,6 +22,10 @@ router.post('/logout', Logout);
 router.post('/verify-email', VerifyEmail);
 
 // Forget Password route
-router.post('/forget-password', ForgotPassword);
+router.post('/forget-password', ForgetPassword);
+
+// Reset Password route
+router.post('/reset-password', ResetPassword);
+
 
 module.exports = router;
