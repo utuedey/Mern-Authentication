@@ -30,7 +30,7 @@ const SignupPage = () => {
        type='text'
        placeholder='Full Name'
        value={name}
-       onchange={(e) => setName(e.target.value)}
+       onChange={(e) => setName(e.target.value)}
        />
        </form>
     
