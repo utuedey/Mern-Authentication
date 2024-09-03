@@ -1,6 +1,6 @@
 import { Check, X } from "lucide-react";
 
-const PasswordCriteria = ({password}) => {
+const PasswordCriteria = ({ password }) => {
     const criteria = [
         { label: 'At least 6 characters', met: password.length >= 6 },
         { label: 'Contains uppercase letter', met: /[A-Z]/.test(password) },
@@ -52,7 +52,7 @@ const PasswordStrengthMeter = ({ password }) => {
         if (strength === 1) return "Weak";
         if (strength === 2) return "Fair";
         if (strength === 3) return "Good";
-        return "strong";
+        return "Strong";
     };
 
   return (
@@ -71,7 +71,7 @@ const PasswordStrengthMeter = ({ password }) => {
             />
         ))}
     </div>
-    <PasswordCriteria password={{password}} />
+    <PasswordCriteria password={password} />
     </div>
   );
 };
