@@ -17,3 +17,6 @@ Advance MERN stack Authentication system built using the MERN stack
 - Fields
 - Email
 - Password
+
+## Author
+- Joseph Utuedeye
