@@ -7,6 +7,12 @@ Advance MERN stack Authentication system built using the MERN stack
 - Login Page
 - Enhanced Password functionality
 
+## frontend
+- React and TailwindCss
+
+## Backend
+- Express
+
 ## SignUp page
 - Fields
 - username
